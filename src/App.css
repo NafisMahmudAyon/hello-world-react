@@ -24,6 +24,19 @@
   color: white;
 }
 
+.hello {
+  /* display: flex; */
+}
+
+.style {
+  display: block;
+  border: 1px solid;
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
+
 .App-link {
   color: #61dafb;
 }
