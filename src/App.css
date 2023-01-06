@@ -47,25 +47,36 @@
   background-color: aqua;
   color: snow;
   text-align: center;
+  
   width: 95%;
   margin: 10;
 
 }
 
-.head {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.title {
+  /* position: relative; */
+  position: inline-block;
+  height: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  justify-content: space-between;
+  margin: auto;
+  
+  /* top: 50%;
+  left: 50%; */
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.title {
-  position: relative;
-  height: 50px;
+  /* float: left; */
   
 }
+
+.head {
+  margin: 0;
+  
+}
+
+
 
 /* .style {
   display: block;
