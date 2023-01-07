@@ -1,4 +1,5 @@
 import React from 'react';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 //import logo from './logo.svg';
 import './App.css';
@@ -303,16 +304,18 @@ import './App.css';
     const listItems = data.map(
         (element) => {
             return (
-              
-                <div className='website'>
+              <div className=''>
+                <div className='website hover:drop-shadow-[0_10px_10px_rgba(67,115,198,0.8)]  mb-5 mt-5'>
                   <div className='title '>
                     <div className='head text-2xl font-bold'>
                       {element.name}
                     </div>
-                    <div className='button rounded-[12px] pl-10 pr-10 m-5 bg-emerald-700'>
-                        <a href={element.link}>
+                    <div className='button  pl-10 pr-10 bg-emerald-700 min-h-full text-lg'>
+                        <div className='butt'>
+                            <a target="_blank" href={element.link}  >
                             {element.name}
-                        </a>
+                            </a>
+                        </div>
 
                     </div>
                   </div>
@@ -320,11 +323,12 @@ import './App.css';
                   <iframe src={element.link} width="100%" height="420px" title={element.name}></iframe>
                   </div>
                 </div>
+                </div>
             )
         }
     )
     return (
-        <div className=' drop-shadow-2xl grid-container'>
+        <div className='grid-container rounded-[12px] mt-100'>
             {listItems}
         </div>
     )
@@ -337,6 +341,39 @@ import './App.css';
 function App() {
   return (
     <div className='App'>
+        <div>
+        <Parallax pages={1} style={{ top: '0', left: '0' }} class="animation">
+            <ParallaxLayer offset={0} speed={0.25}>
+                <div class="animation_layer parallax" id="artback"></div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={0.3}>
+                <div class="animation_layer parallax" id="mountain"></div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={-0.1}>
+                <div class="animation_layer parallax" id="logoland"></div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={0.3}>
+                <div class="animation_layer parallax" id="jungle1"></div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={0.35}>
+                <div class="animation_layer parallax" id="jungle2"></div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={0.5}>
+                <div class="animation_layer parallax" id="jungle3"></div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={0.45}>
+                <div class="animation_layer parallax" id="jungle4"></div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={0.40}>
+                <div class="animation_layer parallax" id="manonmountain"></div>
+            </ParallaxLayer>
+            <ParallaxLayer offset={0} speed={0.35}>
+                <div class="animation_layer parallax" id="jungle5"></div>
+            </ParallaxLayer>
+            
+        </Parallax>
+        </div>
+
     {/* <div class="container mt-3">
         <ul class="nav nav-pills" role="tablist">
             <li class="nav-item">
@@ -350,10 +387,11 @@ function App() {
             </li>   
         </ul>
     </div> */}
-          <div className='mb-20'>
+          <div className=''>
               <RenderingArrayOfObjects />
           </div>
     </div>
+    
   )
   
   }
