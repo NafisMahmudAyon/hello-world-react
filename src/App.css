@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+>>>>>>> 6b035261c9c1650824553aa005d16073219e9b66
 .App {
   text-align: center;
 }
@@ -28,14 +36,67 @@
   /* display: flex; */
 }
 
+<<<<<<< HEAD
 .style {
+=======
+.grid-container {
+    
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.website {
+  
+  border: 1px solid #161816;
+  background-color: aqua;
+  color: snow;
+  text-align: center;
+  
+  width: 95%;
+  margin: 10;
+
+}
+
+.title {
+  /* position: relative; */
+  position: inline-block;
+  height: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  justify-content: space-between;
+  margin: auto;
+  
+  /* top: 50%;
+  left: 50%; */
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* float: left; */
+  
+}
+
+.head {
+  margin: 0;
+  
+}
+
+
+
+/* .style {
+>>>>>>> 6b035261c9c1650824553aa005d16073219e9b66
   display: block;
   border: 1px solid;
   width: 200px;
   text-align: center;
   padding: 20px;
   margin: 20px;
+<<<<<<< HEAD
 }
+=======
+} */
+>>>>>>> 6b035261c9c1650824553aa005d16073219e9b66
 
 .App-link {
   color: #61dafb;
